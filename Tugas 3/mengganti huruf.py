@@ -1,9 +1,3 @@
-#############################################
-# Replace Character of string.txt
-# Author : Putu Bayu Baskara - 1808561022
-#############################################
-
-# read string.txt
 def read_file():
     string_file = open("string.txt", "r")
     # fill string with data input from string.txt
@@ -11,7 +5,6 @@ def read_file():
     return string
 
 
-# rewrite string.txt for create new data input
 def write_file():
     string_file = open("string.txt", "w")
     string = input("Input New String : ")
@@ -19,13 +12,11 @@ def write_file():
     string_file.close
 
 
-# convert string.txt to lowercase
 def conv_lower(string):
     string = string.lower()
     return string
 
 
-# count alphabet frequency of string.txt
 def count_alphabet(string, alphabet):
     # variable for count alphabet frequency
     count = 0
@@ -38,7 +29,6 @@ def count_alphabet(string, alphabet):
     return count
 
 
-# change character of string.txt
 def change_char():
     # read file and convert to lowercase
     string = read_file()
@@ -58,7 +48,6 @@ def change_char():
     string_file.close
 
 
-#  main program
 def main():
     print("============================")
     print("1. Change a char of string.txt")
